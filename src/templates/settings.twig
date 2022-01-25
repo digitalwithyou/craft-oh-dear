@@ -1,0 +1,16 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.autosuggestField({
+  first: true,
+  label: "API Key",
+  name: 'apiKey',
+  value: settings.apiKey,
+  suggestEnvVars: true,
+}) }}
+
+{{ forms.autosuggestField({
+  label: "Health Check Secret",
+  name: 'healthCheckSecret',
+  value: settings.healthCheckSecret,
+  suggestEnvVars: true,
+}) }}

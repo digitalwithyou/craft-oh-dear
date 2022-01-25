@@ -1,0 +1,51 @@
+{
+    "name": "dwy/oh-dear",
+    "description": "Integration of Oh Dear monitoring in Craft CMS",
+    "type": "craft-plugin",
+    "keywords": [
+        "craft",
+        "craftcms",
+        "craft-plugin",
+        "oh dear",
+        "ohdear",
+        "monitoring"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Digital With You",
+            "homepage": "https://digitalwithyou.com"
+        },
+        {
+            "name": "Dieter Wyns",
+            "homepage": "https://diewy.be"
+        }
+    ],
+    "support": {
+        "email": "craftsupport@digitalwithyou.com",
+        "issues": "https://github.com/digitalwithyou/craft-oh-dear/issues?state=open",
+        "source": "https://github.com/digitalwithyou/craft-oh-dear",
+        "docs": "https://github.com/digitalwithyou/craft-oh-dear/blob/main/README.md"
+    },
+    "require": {
+        "craftcms/cms": "^3.7.0",
+        "ohdearapp/health-check-results": "^1.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "dwy\\OhDear\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Oh Dear",
+        "handle": "oh-dear"
+    },
+    "config": {
+        "platform": {
+            "php": "8.0"
+        }
+    }
+}
